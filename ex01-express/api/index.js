@@ -1,20 +1,15 @@
 
-const dotenv = require ("dotenv/config");
-
-console.log("Olá, Turma!");
-
-console.log(process.env.MY_SECRET);
 import "dotenv/config";
 import express from "express";
 
-console.log("Olá, Turma!");
+console.log("Olá, Professor!");
 console.log("MY_SECRET", process.env.MY_SECRET);
 console.log("PYTHON_ROOT", process.env.PYTHON_ROOT);
 
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Hello World!");
+  res.send("Bem-vindo ao Express de Ewayrton");
 });
 
 app.listen(3000, () => {
